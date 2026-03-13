@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #1a1a1a;
+  --color-primary: #9b0000;
+  --color-primary-dark: #7a0000;
+  --color-secondary: #222222;
+  --color-accent: #9b0000;
+  --color-muted: #777777;
+  --color-border: #e5e5e5;
+  --color-surface: #f4f4f4;
+  --color-surface-dark: #ebebeb;
+  --color-watch-red: #cc0000;
+  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-gothic: var(--font-unifraktur), cursive;
+  --font-sans: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1a1a;
+}
+
+/* Article body prose */
+.article-body p {
+  margin-bottom: 1.2rem;
+  line-height: 1.75;
+  font-size: 1.05rem;
+  color: #333;
+}
+.article-body img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+}
+.article-body a {
+  color: #9b0000;
+  text-decoration: underline;
+}
+.article-body blockquote {
+  border-left: 3px solid #9b0000;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #555;
+}
+
+/* Thin separator used between articles */
+.article-separator {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 0;
+}
