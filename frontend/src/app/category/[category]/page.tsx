@@ -2,6 +2,7 @@ import { getArticlesByCategory, getLatestSidebarArticles } from "@/lib/queries";
 import ArticleGrid from "@/components/ArticleGrid";
 import LatestSidebar from "@/components/LatestSidebar";
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 interface Props {

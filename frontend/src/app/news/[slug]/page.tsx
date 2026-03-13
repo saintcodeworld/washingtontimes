@@ -6,6 +6,7 @@ import { ArrowLeft } from "lucide-react";
 import { getArticleBySlug, getLatestSidebarArticles } from "@/lib/queries";
 import LatestSidebar from "@/components/LatestSidebar";
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 interface Props {
